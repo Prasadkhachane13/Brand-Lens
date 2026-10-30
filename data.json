@@ -1,0 +1,1878 @@
+{
+  "contentItems": [
+    {
+      "id": "item-claims-term",
+      "title": "Unsubstantiated Market Claims Flyer",
+      "channel": "PRESS",
+      "format": "TEXT",
+      "status": "DRAFT",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "item-claims-term-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "item-claims-term-v1",
+          "contentItemId": "item-claims-term",
+          "versionNumber": 1,
+          "rawContent": "NW Home delivers the #1 best-in-class performance that is guaranteed to transform your household climate. Our intelligent thermostat brings revolutionary efficiency.",
+          "readinessScore": 6,
+          "blockersCount": 1,
+          "totalFindingsCount": 6,
+          "findings": [
+            {
+              "id": "term-term-nw-home-0",
+              "contentItemId": "item-claims-term",
+              "versionId": "item-claims-term-v1",
+              "category": "terminology",
+              "severity": "HIGH",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 0,
+                "end": 7,
+                "text": "NW Home"
+              },
+              "why": "Avoid term \"NW Home\". The preferred brand terminology is \"Northwind Home\". The preferred brand terminology is \"Northwind Home\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Northwind Home"
+              },
+              "status": "OPEN",
+              "weight": 3
+            },
+            {
+              "id": "msg-core-prop-105",
+              "contentItemId": "item-claims-term",
+              "versionId": "item-claims-term-v1",
+              "category": "messaging",
+              "severity": "MEDIUM",
+              "ruleCode": "MESSAGING-VALUE-PROP",
+              "span": {
+                "start": 0,
+                "end": 105,
+                "text": "NW Home delivers the #1 best-in-class performance that is guaranteed to transform your household climate."
+              },
+              "why": "Marketing channels require inclusion of core value proposition: \"Intelligent climate control made simple for modern homes.\" to ensure cross-channel brand recognition.",
+              "citation": {
+                "id": "MSG-1",
+                "type": "guideline",
+                "title": "Core Brand Pillars & Value Propositions",
+                "section": "Market Positioning",
+                "brandPrinciple": "External customer-facing collateral must reinforce our central thesis: Intelligent climate control made simple for modern homes."
+              },
+              "suggestedFix": {
+                "action": "INSERT",
+                "text": " Intelligent climate control made simple for modern homes. "
+              },
+              "status": "OPEN",
+              "weight": 3.5
+            },
+            {
+              "id": "claim-outdated-21",
+              "contentItemId": "item-claims-term",
+              "versionId": "item-claims-term-v1",
+              "category": "claims",
+              "severity": "HIGH",
+              "ruleCode": "CLAIM-SUPERLATIVE",
+              "span": {
+                "start": 21,
+                "end": 23,
+                "text": "#1"
+              },
+              "why": "OUTDATED SOURCE: Superlative claim \"#1\" references source \"2023 Thermal Modulation Award (EXPIRED)\" which expired on 2024-01-01. Unsubstantiated rejects are strictly prohibited.",
+              "citation": {
+                "id": "SRC-2023-THERMAL",
+                "type": "approved_source",
+                "title": "2023 Thermal Modulation Award (EXPIRED)",
+                "owner": "Market Research",
+                "effectiveFrom": "2023-01-01",
+                "reviewAfter": "2024-01-01",
+                "isExpired": true,
+                "substantiatedStatementText": "Rated #1 best-in-class thermostat for smart home temperature modulation.",
+                "brandPrinciple": "Every finding flagged by BrandLens is tied to an explicit rule in the Northwind Home Brand Kit or an Approved Evidence Source. Unsubstantiated claims are strictly prohibited."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "leading"
+              },
+              "status": "OPEN",
+              "weight": 4
+            },
+            {
+              "id": "claim-outdated-24",
+              "contentItemId": "item-claims-term",
+              "versionId": "item-claims-term-v1",
+              "category": "claims",
+              "severity": "HIGH",
+              "ruleCode": "CLAIM-SUPERLATIVE",
+              "span": {
+                "start": 24,
+                "end": 37,
+                "text": "best-in-class"
+              },
+              "why": "OUTDATED SOURCE: Superlative claim \"best-in-class\" references source \"2023 Thermal Modulation Award (EXPIRED)\" which expired on 2024-01-01. Unsubstantiated rejects are strictly prohibited.",
+              "citation": {
+                "id": "SRC-2023-THERMAL",
+                "type": "approved_source",
+                "title": "2023 Thermal Modulation Award (EXPIRED)",
+                "owner": "Market Research",
+                "effectiveFrom": "2023-01-01",
+                "reviewAfter": "2024-01-01",
+                "isExpired": true,
+                "substantiatedStatementText": "Rated #1 best-in-class thermostat for smart home temperature modulation.",
+                "brandPrinciple": "Every finding flagged by BrandLens is tied to an explicit rule in the Northwind Home Brand Kit or an Approved Evidence Source. Unsubstantiated claims are strictly prohibited."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "industry-recognized"
+              },
+              "status": "OPEN",
+              "weight": 4
+            },
+            {
+              "id": "claim-unsubstantiated-58",
+              "contentItemId": "item-claims-term",
+              "versionId": "item-claims-term-v1",
+              "category": "claims",
+              "severity": "BLOCKER",
+              "ruleCode": "CLAIM-SUPERLATIVE",
+              "span": {
+                "start": 58,
+                "end": 68,
+                "text": "guaranteed"
+              },
+              "why": "Absolute superlative \"guaranteed\" has no active validated Approved Source on file. Unverified claims create regulatory advertising liability.",
+              "citation": {
+                "id": "CLAIM-1",
+                "type": "guideline",
+                "title": "Superlatives & Unsubstantiated Claims",
+                "section": "Substantiation Requirements",
+                "brandPrinciple": "Absolute superlatives such as \"#1\", \"guaranteed\", or \"best-in-class\" are strictly prohibited unless linked to an active, validated Approved Source."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "designed to"
+              },
+              "status": "OPEN",
+              "weight": 5
+            },
+            {
+              "id": "msg-vague-hype-140",
+              "contentItemId": "item-claims-term",
+              "versionId": "item-claims-term-v1",
+              "category": "messaging",
+              "severity": "MEDIUM",
+              "ruleCode": "MESSAGING-SPECIFICITY",
+              "span": {
+                "start": 140,
+                "end": 164,
+                "text": "revolutionary efficiency"
+              },
+              "why": "Phrasing \"revolutionary efficiency\" relies on empty abstraction. Northwind messaging requires specific, grounded engineering benefits.",
+              "citation": {
+                "id": "MSG-2",
+                "type": "guideline",
+                "title": "Concrete Product Value vs Abstract Hyperbole",
+                "section": "Feature Messaging",
+                "brandPrinciple": "Quantify or describe physical user benefits (comfort, acoustic silence, energy savings) instead of generic buzzwords."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "sub-degree temperature precision and energy optimization"
+              },
+              "status": "OPEN",
+              "weight": 2.5
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z"
+    },
+    {
+      "id": "content-outdated-bulletin",
+      "title": "Outdated Source Reference Bulletin",
+      "channel": "BLOG",
+      "format": "DOCX",
+      "status": "DRAFT",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-outdated-bulletin-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-outdated-bulletin-v1",
+          "contentItemId": "content-outdated-bulletin",
+          "versionNumber": 1,
+          "rawContent": "Northwind Home remains proud of our #1 best-in-class thermostat recognition and our breakthrough that saves 45% on seasonal electricity consumption. Homeowners can count on our proven leadership.",
+          "readinessScore": 13,
+          "blockersCount": 1,
+          "totalFindingsCount": 5,
+          "findings": [
+            {
+              "id": "term-term-northwind-alone-0",
+              "contentItemId": "content-outdated-bulletin",
+              "versionId": "content-outdated-bulletin-v1",
+              "category": "terminology",
+              "severity": "HIGH",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 0,
+                "end": 9,
+                "text": "Northwind"
+              },
+              "why": "When referring to the consumer brand, use full \"Northwind Home\". The preferred brand terminology is \"Northwind Home\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Northwind Home"
+              },
+              "status": "OPEN",
+              "weight": 3
+            },
+            {
+              "id": "msg-core-prop-148",
+              "contentItemId": "content-outdated-bulletin",
+              "versionId": "content-outdated-bulletin-v1",
+              "category": "messaging",
+              "severity": "MEDIUM",
+              "ruleCode": "MESSAGING-VALUE-PROP",
+              "span": {
+                "start": 0,
+                "end": 148,
+                "text": "Northwind Home remains proud of our #1 best-in-class thermostat recognition and our breakthrough that saves 45% on seasonal electricity consumption."
+              },
+              "why": "Marketing channels require inclusion of core value proposition: \"Intelligent climate control made simple for modern homes.\" to ensure cross-channel brand recognition.",
+              "citation": {
+                "id": "MSG-1",
+                "type": "guideline",
+                "title": "Core Brand Pillars & Value Propositions",
+                "section": "Market Positioning",
+                "brandPrinciple": "External customer-facing collateral must reinforce our central thesis: Intelligent climate control made simple for modern homes."
+              },
+              "suggestedFix": {
+                "action": "INSERT",
+                "text": " Intelligent climate control made simple for modern homes. "
+              },
+              "status": "OPEN",
+              "weight": 3.5
+            },
+            {
+              "id": "claim-outdated-36",
+              "contentItemId": "content-outdated-bulletin",
+              "versionId": "content-outdated-bulletin-v1",
+              "category": "claims",
+              "severity": "HIGH",
+              "ruleCode": "CLAIM-SUPERLATIVE",
+              "span": {
+                "start": 36,
+                "end": 38,
+                "text": "#1"
+              },
+              "why": "OUTDATED SOURCE: Superlative claim \"#1\" references source \"2023 Thermal Modulation Award (EXPIRED)\" which expired on 2024-01-01. Unsubstantiated rejects are strictly prohibited.",
+              "citation": {
+                "id": "SRC-2023-THERMAL",
+                "type": "approved_source",
+                "title": "2023 Thermal Modulation Award (EXPIRED)",
+                "owner": "Market Research",
+                "effectiveFrom": "2023-01-01",
+                "reviewAfter": "2024-01-01",
+                "isExpired": true,
+                "substantiatedStatementText": "Rated #1 best-in-class thermostat for smart home temperature modulation.",
+                "brandPrinciple": "Every finding flagged by BrandLens is tied to an explicit rule in the Northwind Home Brand Kit or an Approved Evidence Source. Unsubstantiated claims are strictly prohibited."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "leading"
+              },
+              "status": "OPEN",
+              "weight": 4
+            },
+            {
+              "id": "claim-outdated-39",
+              "contentItemId": "content-outdated-bulletin",
+              "versionId": "content-outdated-bulletin-v1",
+              "category": "claims",
+              "severity": "HIGH",
+              "ruleCode": "CLAIM-SUPERLATIVE",
+              "span": {
+                "start": 39,
+                "end": 52,
+                "text": "best-in-class"
+              },
+              "why": "OUTDATED SOURCE: Superlative claim \"best-in-class\" references source \"2023 Thermal Modulation Award (EXPIRED)\" which expired on 2024-01-01. Unsubstantiated rejects are strictly prohibited.",
+              "citation": {
+                "id": "SRC-2023-THERMAL",
+                "type": "approved_source",
+                "title": "2023 Thermal Modulation Award (EXPIRED)",
+                "owner": "Market Research",
+                "effectiveFrom": "2023-01-01",
+                "reviewAfter": "2024-01-01",
+                "isExpired": true,
+                "substantiatedStatementText": "Rated #1 best-in-class thermostat for smart home temperature modulation.",
+                "brandPrinciple": "Every finding flagged by BrandLens is tied to an explicit rule in the Northwind Home Brand Kit or an Approved Evidence Source. Unsubstantiated claims are strictly prohibited."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "industry-recognized"
+              },
+              "status": "OPEN",
+              "weight": 4
+            },
+            {
+              "id": "claim-num-unverified-108",
+              "contentItemId": "content-outdated-bulletin",
+              "versionId": "content-outdated-bulletin-v1",
+              "category": "claims",
+              "severity": "BLOCKER",
+              "ruleCode": "CLAIM-NUMERIC",
+              "span": {
+                "start": 108,
+                "end": 112,
+                "text": "45% "
+              },
+              "why": "Numeric claim \"45% \" is not documented in any active Approved Fact Source. Unsubstantiated statistics risk regulatory compliance fines.",
+              "citation": {
+                "id": "CLAIM-2",
+                "type": "guideline",
+                "title": "Numeric and Performance Data Verification",
+                "section": "Statistical Integrity",
+                "brandPrinciple": "Every numeric percentage, technical specification, and dollar amount quoted in content must be documented verbatim in an active Approved Source."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "significant measurable"
+              },
+              "status": "OPEN",
+              "weight": 4.5
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z"
+    },
+    {
+      "id": "content-confidential-memo",
+      "title": "Confidential Launch Memo",
+      "channel": "INTERNAL",
+      "format": "PDF",
+      "status": "DRAFT",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-confidential-memo-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-confidential-memo-v1",
+          "contentItemId": "content-confidential-memo",
+          "versionNumber": 1,
+          "rawContent": "[CONFIDENTIAL - INTERNAL ONLY]\nExecutive Briefing on Project Boreas hardware rollout.\nDeploy automated testing using live Stripe credentials sk_live_northwind_99214 for payment sandbox.\nDirect inquiries to employee lead coordinator SSN: 012-34-5678.",
+          "readinessScore": 0,
+          "blockersCount": 4,
+          "totalFindingsCount": 4,
+          "findings": [
+            {
+              "id": "conf-banner-0",
+              "contentItemId": "content-confidential-memo",
+              "versionId": "content-confidential-memo-v1",
+              "category": "confidentiality",
+              "severity": "BLOCKER",
+              "ruleCode": "CONF-INTERNAL-MARKER",
+              "span": {
+                "start": 0,
+                "end": 30,
+                "text": "[CONFIDENTIAL - INTERNAL ONLY]"
+              },
+              "why": "Internal classification banner \"[CONFIDENTIAL - INTERNAL ONLY]\" found. Material marked confidential cannot be approved for public distribution.",
+              "citation": {
+                "id": "CONF-3",
+                "type": "guideline",
+                "title": "Document Classification & Distribution Clearance",
+                "section": "Distribution Tiering",
+                "brandPrinciple": "All internal classification labels must be resolved and scrubbed before public external release."
+              },
+              "suggestedFix": {
+                "action": "REMOVE",
+                "text": ""
+              },
+              "status": "OPEN",
+              "weight": 8
+            },
+            {
+              "id": "conf-codename-53",
+              "contentItemId": "content-confidential-memo",
+              "versionId": "content-confidential-memo-v1",
+              "category": "confidentiality",
+              "severity": "BLOCKER",
+              "ruleCode": "CONF-UNANNOUNCED-CODENAME",
+              "span": {
+                "start": 53,
+                "end": 67,
+                "text": "Project Boreas"
+              },
+              "why": "Unreleased internal codename \"Project Boreas\" detected. Unannounced roadmaps are trade secrets until official press embargo lift.",
+              "citation": {
+                "id": "CONF-4",
+                "type": "guideline",
+                "title": "Product Roadmap & Embargo Governance",
+                "section": "Codename Confidentiality",
+                "brandPrinciple": "Use approved public product commercial names (e.g. Northwind Home EcoController) instead of internal engineering codenames."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "the next-generation Northwind ecosystem"
+              },
+              "status": "OPEN",
+              "weight": 8
+            },
+            {
+              "id": "conf-key-141",
+              "contentItemId": "content-confidential-memo",
+              "versionId": "content-confidential-memo-v1",
+              "category": "confidentiality",
+              "severity": "BLOCKER",
+              "ruleCode": "CONF-API-KEY",
+              "span": {
+                "start": 141,
+                "end": 164,
+                "text": "sk_live_northwind_99214"
+              },
+              "why": "CRITICAL SECURITY LEAK: Live API secret or authentication token detected. Accidental publication will compromise production infrastructure.",
+              "citation": {
+                "id": "CONF-1",
+                "type": "guideline",
+                "title": "Information Security & Credential Protection",
+                "section": "Secret Zero Tolerance",
+                "brandPrinciple": "No production credentials, API secrets, or internal service access tokens may appear in public collateral or documentation."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "[REDACTED_API_KEY]"
+              },
+              "status": "OPEN",
+              "weight": 10
+            },
+            {
+              "id": "conf-pii-237",
+              "contentItemId": "content-confidential-memo",
+              "versionId": "content-confidential-memo-v1",
+              "category": "confidentiality",
+              "severity": "BLOCKER",
+              "ruleCode": "CONF-PII",
+              "span": {
+                "start": 237,
+                "end": 248,
+                "text": "012-34-5678"
+              },
+              "why": "CRITICAL PRIVACY VIOLATION: Social Security Number (SSN) pattern detected. Violates GDPR, CCPA, and corporate data governance.",
+              "citation": {
+                "id": "CONF-2",
+                "type": "guideline",
+                "title": "Data Privacy & PII Safeguards",
+                "section": "Government Identifier Protection",
+                "brandPrinciple": "Customer or employee personal identifying numbers must never be included in drafts or published collateral."
+              },
+              "suggestedFix": {
+                "action": "REMOVE",
+                "text": ""
+              },
+              "status": "OPEN",
+              "weight": 10
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z"
+    },
+    {
+      "id": "content-visual-compliance",
+      "title": "Visual Asset Compliance Test",
+      "channel": "LANDING",
+      "format": "IMAGE",
+      "status": "DRAFT",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-visual-compliance-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-visual-compliance-v1",
+          "contentItemId": "content-visual-compliance",
+          "versionNumber": 1,
+          "rawContent": "Experience modern heating. Accent banners feature custom magenta #FF0055 styling and a stretched logo lockup designed for dramatic impact across digital displays.",
+          "mediaUrl": "https://images.unsplash.com/photo-1558002038-1055907df827?w=500&unverified=true",
+          "readinessScore": 56,
+          "blockersCount": 0,
+          "totalFindingsCount": 4,
+          "findings": [
+            {
+              "id": "visual-asset-unapproved-0",
+              "contentItemId": "content-visual-compliance",
+              "versionId": "content-visual-compliance-v1",
+              "category": "visual",
+              "severity": "HIGH",
+              "ruleCode": "VISUAL-UNAPPROVED-ASSET",
+              "span": {
+                "start": 0,
+                "end": 30,
+                "text": "Experience modern heating. Acc"
+              },
+              "why": "Visual asset perceptual dHash does not match any registered asset in the Northwind Approved Asset Repository.",
+              "citation": {
+                "id": "VIS-3",
+                "type": "guideline",
+                "title": "Licensed & Validated Media Assets",
+                "section": "Perceptual Hash Compliance",
+                "brandPrinciple": "All marketing photos, renders, and iconography must originate from the Brand Kit Approved Assets library to ensure rights clearance and resolution standards."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Use approved hero asset /assets/northwind-hero-verified.webp"
+              },
+              "status": "OPEN",
+              "weight": 3.5
+            },
+            {
+              "id": "msg-core-prop-26",
+              "contentItemId": "content-visual-compliance",
+              "versionId": "content-visual-compliance-v1",
+              "category": "messaging",
+              "severity": "MEDIUM",
+              "ruleCode": "MESSAGING-VALUE-PROP",
+              "span": {
+                "start": 0,
+                "end": 26,
+                "text": "Experience modern heating."
+              },
+              "why": "Marketing channels require inclusion of core value proposition: \"Intelligent climate control made simple for modern homes.\" to ensure cross-channel brand recognition.",
+              "citation": {
+                "id": "MSG-1",
+                "type": "guideline",
+                "title": "Core Brand Pillars & Value Propositions",
+                "section": "Market Positioning",
+                "brandPrinciple": "External customer-facing collateral must reinforce our central thesis: Intelligent climate control made simple for modern homes."
+              },
+              "suggestedFix": {
+                "action": "INSERT",
+                "text": " Intelligent climate control made simple for modern homes. "
+              },
+              "status": "OPEN",
+              "weight": 3.5
+            },
+            {
+              "id": "visual-hex-65",
+              "contentItemId": "content-visual-compliance",
+              "versionId": "content-visual-compliance-v1",
+              "category": "visual",
+              "severity": "MEDIUM",
+              "ruleCode": "VISUAL-PALETTE",
+              "span": {
+                "start": 65,
+                "end": 72,
+                "text": "#FF0055"
+              },
+              "why": "Hex color \"#FF0055\" is outside the authorized Northwind Home corporate color system.",
+              "citation": {
+                "id": "VIS-2",
+                "type": "guideline",
+                "title": "Color Palette & Atmospheric Lighting",
+                "section": "Palette Standards",
+                "brandPrinciple": "Northwind visual identity is defined by Deep Slate (#0B111E), Nordic Cobalt (#2563EB), and Teal (#0D9488). Arbitrary tinting dilutes visual consistency."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "#2563EB"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "visual-logo-87",
+              "contentItemId": "content-visual-compliance",
+              "versionId": "content-visual-compliance-v1",
+              "category": "visual",
+              "severity": "HIGH",
+              "ruleCode": "VISUAL-LOGO-CLEARSPACE",
+              "span": {
+                "start": 87,
+                "end": 101,
+                "text": "stretched logo"
+              },
+              "why": "Northwind Home emblem must maintain 1:1 aspect ratio with minimum clearspace equal to 50% of the shield height.",
+              "citation": {
+                "id": "VIS-1",
+                "type": "guideline",
+                "title": "Logo Clearspace & Protection Zone",
+                "section": "Emblem Integrity",
+                "brandPrinciple": "Never rotate, skew, stretch, or alter the color lockup of the primary Northwind shield logo."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "standard approved logo lockup with 24px clearspace"
+              },
+              "status": "OPEN",
+              "weight": 3
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z",
+      "mediaUrl": "https://images.unsplash.com/photo-1558002038-1055907df827?w=500&unverified=true"
+    },
+    {
+      "id": "content-tone-launch-note",
+      "title": "Tone Violations in Launch Note",
+      "channel": "SOCIAL",
+      "format": "TEXT",
+      "status": "DRAFT",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-tone-launch-note-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-tone-launch-note-v1",
+          "contentItemId": "content-tone-launch-note",
+          "versionNumber": 1,
+          "rawContent": "This new update is super dope and totally mind-blowing!!! We are gonna help everyone save tons of cash while experiencing revolutionary efficiency and unprecedented domestic comfort across all living spaces with zero complications whatsoever and complete peace of mind.",
+          "readinessScore": 24,
+          "blockersCount": 0,
+          "totalFindingsCount": 12,
+          "findings": [
+            {
+              "id": "tone-readability-0",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "MEDIUM",
+              "ruleCode": "TONE-COMPLEXITY",
+              "span": {
+                "start": 0,
+                "end": 269,
+                "text": "This new update is super dope and totally mind-blowing!!! We are gonna help everyone save tons of cash while experiencing revolutionary efficiency and unprecedented domestic comfort across all living spaces with zero complications whatsoever and complete peace of mind."
+              },
+              "why": "Content reading level is estimated at Grade 14, exceeding target band (Grades 8-11).",
+              "citation": {
+                "id": "TONE-1",
+                "type": "guideline",
+                "title": "Universal Readability & Clarity",
+                "section": "Flesch-Kincaid Benchmark",
+                "brandPrinciple": "Northwind documentation must remain readily accessible to homeowners without specialized engineering backgrounds."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Simplify sentence structure and replace technical jargon with direct language."
+              },
+              "status": "OPEN",
+              "weight": 1.5
+            },
+            {
+              "id": "tone-slang-19",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "MEDIUM",
+              "ruleCode": "TONE-SLANG",
+              "span": {
+                "start": 19,
+                "end": 29,
+                "text": "super dope"
+              },
+              "why": "Casual slang 'super dope' does not match the authoritative, calm Northwind Home brand persona.",
+              "citation": {
+                "id": "TONE-2",
+                "type": "guideline",
+                "title": "Brand Voice, Formality & Vocabulary",
+                "section": "Vocabulary Restrictions",
+                "brandPrinciple": "Use precise architectural and engineering vocabulary rather than promotional hyperbole or colloquialisms."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "exceptional"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "term-term-super-dope-19",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "terminology",
+              "severity": "MEDIUM",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 19,
+                "end": 29,
+                "text": "super dope"
+              },
+              "why": "Informal slang incompatible with brand prestige. The preferred brand terminology is \"exceptional\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "exceptional"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "tone-slang-42",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "MEDIUM",
+              "ruleCode": "TONE-SLANG",
+              "span": {
+                "start": 42,
+                "end": 54,
+                "text": "mind-blowing"
+              },
+              "why": "Casual slang 'mind-blowing' does not match the authoritative, calm Northwind Home brand persona.",
+              "citation": {
+                "id": "TONE-2",
+                "type": "guideline",
+                "title": "Brand Voice, Formality & Vocabulary",
+                "section": "Vocabulary Restrictions",
+                "brandPrinciple": "Use precise architectural and engineering vocabulary rather than promotional hyperbole or colloquialisms."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "innovative"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "term-term-mind-blowing-42",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "terminology",
+              "severity": "MEDIUM",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 42,
+                "end": 54,
+                "text": "mind-blowing"
+              },
+              "why": "Hyperbolic marketing claim. The preferred brand terminology is \"remarkable\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "remarkable"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "tone-exclamation-54",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "LOW",
+              "ruleCode": "TONE-PUNCTUATION",
+              "span": {
+                "start": 54,
+                "end": 57,
+                "text": "!!!"
+              },
+              "why": "Multiple consecutive exclamation marks violate Northwind Home professional editorial tone standards.",
+              "citation": {
+                "id": "TONE-1",
+                "type": "guideline",
+                "title": "Editorial Tone & Professional Punctuation",
+                "section": "Punctuation & Syntax",
+                "brandPrinciple": "Northwind Home communicates with quiet confidence, precision, and clarity. Avoid sensationalist typography."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "."
+              },
+              "status": "OPEN",
+              "weight": 1.5
+            },
+            {
+              "id": "tone-length-58",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "LOW",
+              "ruleCode": "TONE-SENTENCE-LENGTH",
+              "span": {
+                "start": 58,
+                "end": 269,
+                "text": "We are gonna help everyone save tons of cash while experiencing revolutionary efficiency and unprecedented domestic comfort across all living spaces with zero complications whatsoever and complete peace of mind."
+              },
+              "why": "Sentence has 30 words, exceeding maximum guideline threshold of 25 words. Long sentences reduce reader comprehension.",
+              "citation": {
+                "id": "TONE-3",
+                "type": "guideline",
+                "title": "Syntax Cadence & Sentence Architecture",
+                "section": "Sentence Length & Readability",
+                "brandPrinciple": "Favor crisp, rhythmic sentence structures. Split compound ideas into two distinct statements."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "We are gonna help everyone save tons of cash while experiencing revolutionary efficiency. Additionally, unprecedented domestic comfort across all living spaces with zero complications whatsoever and complete peace of mind."
+              },
+              "status": "OPEN",
+              "weight": 1
+            },
+            {
+              "id": "tone-slang-65",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "MEDIUM",
+              "ruleCode": "TONE-SLANG",
+              "span": {
+                "start": 65,
+                "end": 70,
+                "text": "gonna"
+              },
+              "why": "Casual slang 'gonna' does not match the authoritative, calm Northwind Home brand persona.",
+              "citation": {
+                "id": "TONE-2",
+                "type": "guideline",
+                "title": "Brand Voice, Formality & Vocabulary",
+                "section": "Vocabulary Restrictions",
+                "brandPrinciple": "Use precise architectural and engineering vocabulary rather than promotional hyperbole or colloquialisms."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "going to"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "term-term-gonna-65",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "terminology",
+              "severity": "MEDIUM",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 65,
+                "end": 70,
+                "text": "gonna"
+              },
+              "why": "Colloquial abbreviation. The preferred brand terminology is \"going to\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "going to"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "tone-slang-90",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "tone",
+              "severity": "MEDIUM",
+              "ruleCode": "TONE-SLANG",
+              "span": {
+                "start": 90,
+                "end": 97,
+                "text": "tons of"
+              },
+              "why": "Casual slang 'tons of' does not match the authoritative, calm Northwind Home brand persona.",
+              "citation": {
+                "id": "TONE-2",
+                "type": "guideline",
+                "title": "Brand Voice, Formality & Vocabulary",
+                "section": "Vocabulary Restrictions",
+                "brandPrinciple": "Use precise architectural and engineering vocabulary rather than promotional hyperbole or colloquialisms."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "substantial"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "term-term-tons-of-90",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "terminology",
+              "severity": "MEDIUM",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 90,
+                "end": 97,
+                "text": "tons of"
+              },
+              "why": "Imprecise colloquialism. The preferred brand terminology is \"substantial\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "substantial"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "msg-vague-hype-122",
+              "contentItemId": "content-tone-launch-note",
+              "versionId": "content-tone-launch-note-v1",
+              "category": "messaging",
+              "severity": "MEDIUM",
+              "ruleCode": "MESSAGING-SPECIFICITY",
+              "span": {
+                "start": 122,
+                "end": 146,
+                "text": "revolutionary efficiency"
+              },
+              "why": "Phrasing \"revolutionary efficiency\" relies on empty abstraction. Northwind messaging requires specific, grounded engineering benefits.",
+              "citation": {
+                "id": "MSG-2",
+                "type": "guideline",
+                "title": "Concrete Product Value vs Abstract Hyperbole",
+                "section": "Feature Messaging",
+                "brandPrinciple": "Quantify or describe physical user benefits (comfort, acoustic silence, energy savings) instead of generic buzzwords."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "sub-degree temperature precision and energy optimization"
+              },
+              "status": "OPEN",
+              "weight": 2.5
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z"
+    },
+    {
+      "id": "content-a11y-guide",
+      "title": "Customer Onboarding Guide",
+      "channel": "SUPPORT",
+      "format": "MARKDOWN",
+      "status": "DRAFT",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-a11y-guide-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-a11y-guide-v1",
+          "contentItemId": "content-a11y-guide",
+          "versionNumber": 1,
+          "rawContent": "# Northwind Home Quickstart\n\n### Mounting and Hardware Installation\n\n![](/assets/thermostat-mounting.jpg)\n\nTo view complete electrical safety diagrams, please [click here](https://northwind.test/support/wiring).",
+          "readinessScore": 13,
+          "blockersCount": 1,
+          "totalFindingsCount": 5,
+          "findings": [
+            {
+              "id": "term-term-northwind-alone-2",
+              "contentItemId": "content-a11y-guide",
+              "versionId": "content-a11y-guide-v1",
+              "category": "terminology",
+              "severity": "HIGH",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 2,
+                "end": 11,
+                "text": "Northwind"
+              },
+              "why": "When referring to the consumer brand, use full \"Northwind Home\". The preferred brand terminology is \"Northwind Home\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Northwind Home"
+              },
+              "status": "OPEN",
+              "weight": 3
+            },
+            {
+              "id": "a11y-heading-skip-29",
+              "contentItemId": "content-a11y-guide",
+              "versionId": "content-a11y-guide-v1",
+              "category": "accessibility",
+              "severity": "MEDIUM",
+              "ruleCode": "A11Y-HEADING-SKIP",
+              "span": {
+                "start": 29,
+                "end": 67,
+                "text": "### Mounting and Hardware Installation"
+              },
+              "why": "Heading level skip detected: H1 directly followed by H3 without intervening H2. Breaks navigation landmark tree for screen readers.",
+              "citation": {
+                "id": "A11Y-2",
+                "type": "guideline",
+                "title": "Structural Accessibility and Meaningful Links",
+                "section": "Section Headings Hierarchy",
+                "brandPrinciple": "Maintain hierarchical heading order without skipping levels (e.g. h1 followed directly by h3)."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "## Mounting and Hardware Installation"
+              },
+              "status": "OPEN",
+              "weight": 2.5
+            },
+            {
+              "id": "a11y-empty-alt-69",
+              "contentItemId": "content-a11y-guide",
+              "versionId": "content-a11y-guide-v1",
+              "category": "accessibility",
+              "severity": "BLOCKER",
+              "ruleCode": "A11Y-ALT-TEXT",
+              "span": {
+                "start": 69,
+                "end": 105,
+                "text": "![](/assets/thermostat-mounting.jpg)"
+              },
+              "why": "Image is missing alternative text. Assistive screen readers cannot convey image meaning without alt text (WCAG 1.1.1).",
+              "citation": {
+                "id": "A11Y-1",
+                "type": "guideline",
+                "title": "Visual Accessibility and Alternative Descriptions",
+                "section": "Non-text Content (Level A)",
+                "brandPrinciple": "All imagery must include descriptive, purposeful alt text for assistive screen readers."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "![Northwind Home Smart Thermostat mounted on modern wood-paneled wall]($1)"
+              },
+              "status": "OPEN",
+              "weight": 4
+            },
+            {
+              "id": "a11y-link-159",
+              "contentItemId": "content-a11y-guide",
+              "versionId": "content-a11y-guide-v1",
+              "category": "accessibility",
+              "severity": "HIGH",
+              "ruleCode": "A11Y-MEANINGFUL-LINKS",
+              "span": {
+                "start": 159,
+                "end": 210,
+                "text": "[click here](https://northwind.test/support/wiring)"
+              },
+              "why": "Ambiguous link text \"[click here](https://northwind.test/support/wiring)\" fails WCAG 2.1 Criterion 2.4.4. Screen reader users navigating by links cannot understand target destination out of context.",
+              "citation": {
+                "id": "A11Y-2",
+                "type": "guideline",
+                "title": "Structural Accessibility and Meaningful Links",
+                "section": "Link Purpose (In Context)",
+                "brandPrinciple": "Links must provide descriptive context; never use ambiguous phrases like \"click here\" or \"read more\". Describe the specific destination."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "[Explore Northwind Smart Thermostat specifications](https://northwind.test/support/wiring)"
+              },
+              "status": "OPEN",
+              "weight": 3
+            },
+            {
+              "id": "term-term-northwind-alone-180",
+              "contentItemId": "content-a11y-guide",
+              "versionId": "content-a11y-guide-v1",
+              "category": "terminology",
+              "severity": "HIGH",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 180,
+                "end": 189,
+                "text": "northwind"
+              },
+              "why": "When referring to the consumer brand, use full \"Northwind Home\". The preferred brand terminology is \"Northwind Home\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Northwind Home"
+              },
+              "status": "OPEN",
+              "weight": 3
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z"
+    },
+    {
+      "id": "content-smart-scheduling",
+      "title": "Product Feature Release: Smart Scheduling",
+      "channel": "EMAIL",
+      "format": "TEXT",
+      "status": "SUBMITTED",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-smart-scheduling-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-smart-scheduling-v1",
+          "contentItemId": "content-smart-scheduling",
+          "versionNumber": 1,
+          "rawContent": "Northwind Home introduces intelligent climate control made simple for modern homes. Activate Eco Mode in your mobile application to save up to 23% on seasonal HVAC electricity bills.",
+          "readinessScore": 71,
+          "blockersCount": 0,
+          "totalFindingsCount": 3,
+          "findings": [
+            {
+              "id": "term-term-northwind-alone-0",
+              "contentItemId": "content-smart-scheduling",
+              "versionId": "content-smart-scheduling-v1",
+              "category": "terminology",
+              "severity": "HIGH",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 0,
+                "end": 9,
+                "text": "Northwind"
+              },
+              "why": "When referring to the consumer brand, use full \"Northwind Home\". The preferred brand terminology is \"Northwind Home\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "Northwind Home"
+              },
+              "status": "OPEN",
+              "weight": 3
+            },
+            {
+              "id": "term-term-ecomode-93",
+              "contentItemId": "content-smart-scheduling",
+              "versionId": "content-smart-scheduling-v1",
+              "category": "terminology",
+              "severity": "MEDIUM",
+              "ruleCode": "TERM-AVOID",
+              "span": {
+                "start": 93,
+                "end": 101,
+                "text": "Eco Mode"
+              },
+              "why": "Trademarked algorithm requires closed CamelCase formatting. The preferred brand terminology is \"EcoMode\".",
+              "citation": {
+                "id": "TERM-1",
+                "type": "guideline",
+                "title": "Approved Terminology & Prohibited Expressions",
+                "section": "Corporate Brand Nomenclature",
+                "brandPrinciple": "Brand names and trademarks protect company equity. Unauthorized abbreviations and informal variants dilute legal brand identity."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "EcoMode"
+              },
+              "status": "OPEN",
+              "weight": 2
+            },
+            {
+              "id": "term-ecomode-93",
+              "contentItemId": "content-smart-scheduling",
+              "versionId": "content-smart-scheduling-v1",
+              "category": "terminology",
+              "severity": "MEDIUM",
+              "ruleCode": "TERM-ORTHOGRAPHY",
+              "span": {
+                "start": 93,
+                "end": 101,
+                "text": "Eco Mode"
+              },
+              "why": "Ensure strict camelCase capitalization for trademarked product terms such as EcoMode. Found: \"Eco Mode\".",
+              "citation": {
+                "id": "TERM-2",
+                "type": "guideline",
+                "title": "Brand Capitalization & Orthography",
+                "section": "Product Feature Trademarking",
+                "brandPrinciple": "All Northwind Home feature branding requires closed CamelCase formatting to maintain registered trademark recognition."
+              },
+              "suggestedFix": {
+                "action": "REPLACE",
+                "text": "EcoMode"
+              },
+              "status": "OPEN",
+              "weight": 2
+            }
+          ],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z",
+      "submittedAt": "2026-10-22T14:30:00Z"
+    },
+    {
+      "id": "content-approved-ecomode",
+      "title": "Approved EcoMode Press Announcement",
+      "channel": "PRESS",
+      "format": "MARKDOWN",
+      "status": "APPROVED",
+      "author": {
+        "id": "ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"
+      },
+      "activeVersionId": "content-approved-ecomode-v1",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "id": "content-approved-ecomode-v1",
+          "contentItemId": "content-approved-ecomode",
+          "versionNumber": 1,
+          "rawContent": "# Northwind Home Unveils Advanced EcoMode Algorithms\n\nNorthwind Home introduces intelligent climate control made simple for modern homes. In rigorous independent benchmark testing across 1,200 monitored test households, EcoMode saves up to 23% on seasonal HVAC electricity bills while operating quietly at 18 dBA.",
+          "readinessScore": 100,
+          "blockersCount": 0,
+          "totalFindingsCount": 0,
+          "findings": [],
+          "changeSummary": "Initial document creation",
+          "createdAt": "2026-10-22T09:00:00Z",
+          "authorId": "ada"
+        }
+      ],
+      "createdAt": "2026-10-22T09:00:00Z",
+      "updatedAt": "2026-10-22T14:30:00Z",
+      "submittedAt": "2026-10-20T10:00:00Z",
+      "approvedAt": "2026-10-21T11:15:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1",
+      "timestamp": "2026-10-29T08:34:00Z",
+      "actor": {
+        "id": "user-ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR"
+      },
+      "action": "CONTENT_CREATED",
+      "targetType": "CONTENT",
+      "targetId": "content-claims-flyer",
+      "details": "Created draft \"Unsubstantiated Market Claims Flyer\"",
+      "previousHash": "0000000000000000",
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "log-2",
+      "timestamp": "2026-10-29T08:35:12Z",
+      "actor": {
+        "id": "user-ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR"
+      },
+      "action": "ANALYSIS_RUN",
+      "targetType": "CONTENT",
+      "targetId": "content-claims-flyer",
+      "details": "Deterministic engine detected 7 findings (2 blockers, 4 high)",
+      "previousHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hash": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4"
+    },
+    {
+      "id": "log-3",
+      "timestamp": "2026-10-29T08:36:00Z",
+      "actor": {
+        "id": "user-ada",
+        "name": "Ada Lovelace",
+        "email": "ada@northwind.test",
+        "role": "CREATOR"
+      },
+      "action": "SUGGESTION_REJECTED",
+      "targetType": "FINDING",
+      "targetId": "claim-outdated-21",
+      "details": "Author rejected proposed fix for claim \"#1\": \"Subjective marketing qualifier preferred by agency\"",
+      "previousHash": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4",
+      "hash": "7d32c51b74d39f4e2f81907c13da5e656d782161b6c72956cf287ec347101bb2"
+    },
+    {
+      "id": "log-4",
+      "timestamp": "2026-10-29T08:37:30Z",
+      "actor": {
+        "id": "user-marcus",
+        "name": "Marcus Aurelius",
+        "email": "marcus@northwind.test",
+        "role": "REVIEWER"
+      },
+      "action": "STATUS_CHANGED",
+      "targetType": "CONTENT",
+      "targetId": "content-smart-scheduling",
+      "details": "Status transitioned: DRAFT -> SUBMITTED by Ada Lovelace",
+      "previousHash": "7d32c51b74d39f4e2f81907c13da5e656d782161b6c72956cf287ec347101bb2",
+      "hash": "a982f14309d94f29a059b867c4273e319cb8c519d19daef671d2b7818e3a2468"
+    }
+  ],
+  "brandKit": {
+    "brandName": "Northwind Home",
+    "brandTagline": "Intelligent climate control made simple for modern homes.",
+    "guidelines": [
+      {
+        "id": "CLAIM-1",
+        "category": "claims",
+        "ruleCode": "CLAIM-SUPERLATIVE",
+        "title": "Superlatives & Unsubstantiated Claims",
+        "description": "Absolute superlatives such as \"#1\", \"number one\", \"guaranteed\", \"risk-free\", or \"best-in-class\" are strictly prohibited unless linked to an active, validated Approved Source. When unverified, substitute with measured qualifiers such as \"leading\" or \"designed to\".",
+        "severity": "BLOCKER",
+        "examples": {
+          "compliant": [
+            "Our leading thermostat",
+            "Engineered to reduce heating waste"
+          ],
+          "violation": [
+            "The #1 best-in-class thermostat",
+            "Guaranteed lowest energy bills"
+          ]
+        }
+      },
+      {
+        "id": "CLAIM-2",
+        "category": "claims",
+        "ruleCode": "CLAIM-NUMERIC",
+        "title": "Numeric and Performance Data Verification",
+        "description": "Every numeric percentage, technical specification, and dollar amount quoted in content must be documented verbatim in an active Approved Source. Unverified figures create regulatory advertising liability.",
+        "severity": "HIGH",
+        "examples": {
+          "compliant": [
+            "Saves up to 23% based on 2024 independent testing"
+          ],
+          "violation": [
+            "Saves 65% on electricity",
+            "Trusted by 5,000,000 homeowners"
+          ]
+        }
+      },
+      {
+        "id": "TERM-1",
+        "category": "terminology",
+        "ruleCode": "TERM-AVOID",
+        "title": "Approved Terminology & Prohibited Expressions",
+        "description": "Refer to our brand as Northwind Home, never abbreviated as Northwind or NW Home. Use smart climate control instead of HVAC gadgetry.",
+        "severity": "HIGH",
+        "examples": {
+          "compliant": [
+            "Northwind Home EcoController",
+            "intelligent climate control"
+          ],
+          "violation": [
+            "NW Home gadget",
+            "Northwind thermostat app"
+          ]
+        }
+      },
+      {
+        "id": "TERM-2",
+        "category": "terminology",
+        "ruleCode": "TERM-ORTHOGRAPHY",
+        "title": "Brand Capitalization & Orthography",
+        "description": "Ensure strict capitalization for trademarked product terms such as EcoMode and Northwind Bridge. Never use separated or lowercase spellings.",
+        "severity": "MEDIUM",
+        "examples": {
+          "compliant": [
+            "EcoMode setting",
+            "Northwind Bridge hub"
+          ],
+          "violation": [
+            "Eco Mode",
+            "ecomode",
+            "northwind bridge"
+          ]
+        }
+      },
+      {
+        "id": "A11Y-1",
+        "category": "accessibility",
+        "ruleCode": "A11Y-ALT-TEXT",
+        "title": "Visual Accessibility and Alternative Descriptions",
+        "description": "All imagery must include descriptive, purposeful alt text for assistive screen readers. Ensure all foreground text against background colors satisfies minimum WCAG AA contrast ratio of at least 4.5:1.",
+        "severity": "BLOCKER",
+        "examples": {
+          "compliant": [
+            "![Northwind Home thermostat mounted on oak wall](...)]"
+          ],
+          "violation": [
+            "![](/img.png)",
+            "![photo](...)"
+          ]
+        }
+      },
+      {
+        "id": "A11Y-2",
+        "category": "accessibility",
+        "ruleCode": "A11Y-MEANINGFUL-LINKS",
+        "title": "Structural Accessibility and Meaningful Links",
+        "description": "Maintain hierarchical heading order without skipping levels (e.g. h1 followed directly by h3). Links must provide descriptive context; never use ambiguous phrases like \"click here\" or \"read more\".",
+        "severity": "HIGH",
+        "examples": {
+          "compliant": [
+            "[Read the Energy Star report](...)",
+            "h1 -> h2 -> h3"
+          ],
+          "violation": [
+            "[click here](...)",
+            "h1 -> h3 (skipping h2)"
+          ]
+        }
+      },
+      {
+        "id": "TONE-1",
+        "category": "tone",
+        "ruleCode": "TONE-PUNCTUATION",
+        "title": "Editorial Tone & Professional Punctuation",
+        "description": "Maintain a calm, measured, architectural tone. Consecutive exclamation marks, excessive caps, and sensationalist phrasing are prohibited.",
+        "severity": "LOW",
+        "examples": {
+          "compliant": [
+            "Engineered for silent reliability."
+          ],
+          "violation": [
+            "Incredible performance you must see right now!!!"
+          ]
+        }
+      },
+      {
+        "id": "TONE-2",
+        "category": "tone",
+        "ruleCode": "TONE-SLANG",
+        "title": "Brand Voice, Formality & Vocabulary",
+        "description": "Avoid informal internet slang, colloquial hype, or overly casual idioms. Northwind speaks with technical authority and domestic elegance.",
+        "severity": "MEDIUM",
+        "examples": {
+          "compliant": [
+            "exceptional thermal precision",
+            "substantial savings"
+          ],
+          "violation": [
+            "super dope gadget",
+            "mind-blowing performance",
+            "gonna save tons"
+          ]
+        }
+      },
+      {
+        "id": "VIS-1",
+        "category": "visual",
+        "ruleCode": "VISUAL-LOGO-CLEARSPACE",
+        "title": "Logo Clearspace & Protection Zone",
+        "description": "The Northwind Home emblem requires a minimum exclusion zone equal to half the emblem height. Never rotate, recolor, or distort the logo.",
+        "severity": "HIGH",
+        "examples": {
+          "compliant": [
+            "Centered logo lockup with 24px padding"
+          ],
+          "violation": [
+            "Stretched logo",
+            "Logo overlapping busy background photography"
+          ]
+        }
+      },
+      {
+        "id": "CONF-1",
+        "category": "confidentiality",
+        "ruleCode": "CONF-API-KEY",
+        "title": "Information Security & Credential Protection",
+        "description": "Zero tolerance for production credentials, secret keys (sk_live_, AKIA, ghp_), internal codenames, or employee personal data in external collateral.",
+        "severity": "BLOCKER",
+        "examples": {
+          "compliant": [
+            "Configure via Northwind Cloud Console credentials."
+          ],
+          "violation": [
+            "sk_live_northwind_99214",
+            "Project Boreas unreleased specs"
+          ]
+        }
+      }
+    ],
+    "terms": [
+      {
+        "id": "term-nw-home",
+        "term": "NW Home",
+        "preferred": "Northwind Home",
+        "explanation": "Avoid term \"NW Home\". The preferred brand terminology is \"Northwind Home\".",
+        "category": "BRAND_NAME"
+      },
+      {
+        "id": "term-northwind-alone",
+        "term": "Northwind",
+        "preferred": "Northwind Home",
+        "explanation": "When referring to the consumer brand, use full \"Northwind Home\".",
+        "category": "BRAND_NAME"
+      },
+      {
+        "id": "term-ecomode",
+        "term": "Eco Mode",
+        "preferred": "EcoMode",
+        "explanation": "Trademarked algorithm requires closed CamelCase formatting.",
+        "category": "PRODUCT_NAME"
+      },
+      {
+        "id": "term-ecomode-lower",
+        "term": "ecomode",
+        "preferred": "EcoMode",
+        "explanation": "Capitalize registered product feature names.",
+        "category": "PRODUCT_NAME"
+      },
+      {
+        "id": "term-bridge",
+        "term": "northwind bridge",
+        "preferred": "Northwind Bridge",
+        "explanation": "Capitalize proprietary gateway hardware.",
+        "category": "PRODUCT_NAME"
+      },
+      {
+        "id": "term-cheap",
+        "term": "cheap",
+        "preferred": "cost-effective",
+        "explanation": "Connotes substandard manufacturing quality.",
+        "category": "SALES_CLAIM"
+      },
+      {
+        "id": "term-foolproof",
+        "term": "foolproof",
+        "preferred": "intuitive",
+        "explanation": "Patronizing tone toward homeowner users.",
+        "category": "SALES_CLAIM"
+      },
+      {
+        "id": "term-guaranteed-fix",
+        "term": "guaranteed fix",
+        "preferred": "engineered solution",
+        "explanation": "Creates unqualified warranty liability.",
+        "category": "SALES_CLAIM"
+      },
+      {
+        "id": "term-super-dope",
+        "term": "super dope",
+        "preferred": "exceptional",
+        "explanation": "Informal slang incompatible with brand prestige.",
+        "category": "SALES_CLAIM"
+      },
+      {
+        "id": "term-mind-blowing",
+        "term": "mind-blowing",
+        "preferred": "remarkable",
+        "explanation": "Hyperbolic marketing claim.",
+        "category": "SALES_CLAIM"
+      },
+      {
+        "id": "term-gonna",
+        "term": "gonna",
+        "preferred": "going to",
+        "explanation": "Colloquial abbreviation.",
+        "category": "TECHNICAL"
+      },
+      {
+        "id": "term-tons-of",
+        "term": "tons of",
+        "preferred": "substantial",
+        "explanation": "Imprecise colloquialism.",
+        "category": "TECHNICAL"
+      }
+    ],
+    "approvedSources": [
+      {
+        "id": "SRC-2023-THERMAL",
+        "title": "2023 Thermal Modulation Award (EXPIRED)",
+        "factType": "AWARD",
+        "owner": "Market Research",
+        "effectiveFrom": "2023-01-01",
+        "reviewAfter": "2024-01-01",
+        "isExpired": true,
+        "substantiatedStatementText": "Rated #1 best-in-class thermostat for smart home temperature modulation.",
+        "allowedSuperlatives": [
+          "#1",
+          "best-in-class"
+        ],
+        "numericMetrics": {},
+        "notes": "Expired annual accreditation from Home Climate Alliance. Recertification pending."
+      },
+      {
+        "id": "SRC-2024-ENERGY",
+        "title": "2024 Energy Efficiency Independent Benchmark",
+        "factType": "ENERGY_STUDY",
+        "owner": "Hardware QA",
+        "effectiveFrom": "2024-06-01",
+        "reviewAfter": "2027-06-01",
+        "isExpired": false,
+        "substantiatedStatementText": "Saves up to 23% on seasonal HVAC electricity bills across 1,200 monitored test households.",
+        "allowedSuperlatives": [],
+        "numericMetrics": {
+          "savings": "up to 23%",
+          "households": "1,200"
+        }
+      },
+      {
+        "id": "SRC-2025-CUSTOMER",
+        "title": "2025 Customer Trust & Reliability Survey",
+        "factType": "CUSTOMER_COUNT",
+        "owner": "Customer Operations",
+        "effectiveFrom": "2025-01-15",
+        "reviewAfter": "2027-01-15",
+        "isExpired": false,
+        "substantiatedStatementText": "Over 85,000 connected households across Scandinavia and North America.",
+        "allowedSuperlatives": [],
+        "numericMetrics": {
+          "customers": "85,000",
+          "satisfaction": "98.2%"
+        }
+      },
+      {
+        "id": "SRC-2025-UL",
+        "title": "UL 60730-1 Safety Certification",
+        "factType": "CERTIFICATION",
+        "owner": "Compliance & Legal",
+        "effectiveFrom": "2025-03-10",
+        "reviewAfter": "2028-03-10",
+        "isExpired": false,
+        "substantiatedStatementText": "Certified compliant with UL 60730-1 standard for automatic electrical controls for household and similar use.",
+        "allowedSuperlatives": [],
+        "numericMetrics": {}
+      },
+      {
+        "id": "SRC-2024-PATENT",
+        "title": "US Patent 11,842,910 Multi-Zone Heating Control",
+        "factType": "CERTIFICATION",
+        "owner": "Intellectual Property",
+        "effectiveFrom": "2024-11-20",
+        "reviewAfter": "2034-11-20",
+        "isExpired": false,
+        "substantiatedStatementText": "Proprietary predictive thermal inertia algorithms awarded US Patent 11,842,910.",
+        "allowedSuperlatives": [],
+        "numericMetrics": {}
+      },
+      {
+        "id": "SRC-2022-ECODESIGN",
+        "title": "2022 EcoDesign Directive Compliance Report (EXPIRED)",
+        "factType": "AWARD",
+        "owner": "Environmental Affairs",
+        "effectiveFrom": "2022-01-01",
+        "reviewAfter": "2023-12-31",
+        "isExpired": true,
+        "substantiatedStatementText": "Recognized as Europe top energy conserver in residential heat pumps.",
+        "allowedSuperlatives": [
+          "top energy conserver"
+        ],
+        "numericMetrics": {}
+      },
+      {
+        "id": "SRC-2025-DECIBEL",
+        "title": "Acoustic Silence Laboratory Report",
+        "factType": "ENERGY_STUDY",
+        "owner": "Acoustics Engineering",
+        "effectiveFrom": "2025-02-01",
+        "reviewAfter": "2027-02-01",
+        "isExpired": false,
+        "substantiatedStatementText": "Operates silently under 18 dBA at 1 meter distance, virtually imperceptible to human ear.",
+        "allowedSuperlatives": [],
+        "numericMetrics": {
+          "decibels": "18 dBA"
+        }
+      },
+      {
+        "id": "SRC-2026-PRICE",
+        "title": "2026 Recommended Retail Pricing Matrix",
+        "factType": "PRICING",
+        "owner": "Commercial Finance",
+        "effectiveFrom": "2026-01-01",
+        "reviewAfter": "2026-12-31",
+        "isExpired": false,
+        "substantiatedStatementText": "Northwind Home Smart Thermostat MSRP is $249 USD / €229 EUR.",
+        "allowedSuperlatives": [],
+        "numericMetrics": {
+          "msrp_usd": "$249",
+          "msrp_eur": "€229"
+        }
+      }
+    ],
+    "approvedAssets": [
+      {
+        "id": "ASSET-LOGO-LIGHT",
+        "name": "Northwind Shield Logo - Light Mode",
+        "type": "LOGO",
+        "dHash": "a8f4c2e1b3d79055",
+        "minClearspace": "24px",
+        "description": "Primary cobalt and white vector shield emblem for dark backgrounds.",
+        "previewUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "ASSET-LOGO-DARK",
+        "name": "Northwind Shield Logo - Dark Monolith",
+        "type": "LOGO",
+        "dHash": "b4d9e3f1c2a86077",
+        "minClearspace": "24px",
+        "description": "Monochrome slate shield emblem for light editorial documents.",
+        "previewUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "ASSET-PALETTE",
+        "name": "Nordic Architectural Palette Tokens",
+        "type": "PALETTE",
+        "paletteHex": [
+          "#0B111E",
+          "#131B2A",
+          "#1E293B",
+          "#2563EB",
+          "#38BDF8",
+          "#0D9488",
+          "#F1F5F9"
+        ],
+        "description": "Core brand colors inspired by Scandinavian twilight, granite, and coastal sea.",
+        "previewUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=200&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "ASSET-HERO-LIVING",
+        "name": "Hero: Modernist Scandinavian Living Room",
+        "type": "HERO_IMAGE",
+        "dHash": "c7e2b1d9a5f43890",
+        "description": "Verified hero photography featuring warm oak walls, diffused Nordic daylight, and wall unit.",
+        "previewUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=300&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "ASSET-HERO-MINIMAL",
+        "name": "Hero: Minimal Wall-Mount Installation",
+        "type": "HERO_IMAGE",
+        "dHash": "e1a3d5b7c9f28461",
+        "description": "Close-up tactile dial interface photograph on honed architectural concrete.",
+        "previewUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "ASSET-ICON-ECO",
+        "name": "EcoMode Verification Leaf Icon",
+        "type": "LOGO",
+        "dHash": "f0c8e4a2d6b17395",
+        "description": "Precision 24x24 geometric leaf badge signaling active energy optimization.",
+        "previewUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=200&auto=format&fit=crop&q=80"
+      }
+    ],
+    "toneProfile": {
+      "targetFormality": 70,
+      "maxSentenceLength": 25,
+      "targetReadingGrade": [
+        8,
+        11
+      ],
+      "bannedSlang": [
+        "super dope",
+        "mind-blowing",
+        "gonna",
+        "tons of",
+        "insane",
+        "game-changer",
+        "crazy good"
+      ],
+      "allowExclamationPoints": false,
+      "maxExclamationPointsPerDoc": 1,
+      "activeVoiceTarget": 80
+    }
+  }
+}

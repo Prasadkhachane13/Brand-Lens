@@ -1,0 +1,6 @@
+{
+  "name": "BrandLens - Brand Governance & Pre-Publication Compliance",
+  "description": "Reviews pre-publication marketing and product collateral against brand guidelines, approved facts, terminology, tone, and visual assets with human-in-the-loop review.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

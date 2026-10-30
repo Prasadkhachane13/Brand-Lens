@@ -1,0 +1,86 @@
+=== AUDIT BASELINE RECORD ===
+Date: 2026-10-29T02:08:46-07:00
+Environment: Linux x86_64, Node v22.23.4
+
+1. node -v:
+v22.23.4
+
+2. npm ls --depth=0:
+react-example@0.0.0 /app/applet
+├── @google/genai@2.32.0
+├── @prisma/client@7.10.1
+├── @tailwindcss/vite@4.3.3
+├── @types/canvas-confetti@1.9.0
+├── @types/express@4.17.25
+├── @types/node@22.20.5
+├── @types/react-dom@19.3.0
+├── @types/react@19.3.0
+├── @vitejs/plugin-react@6.1.2
+├── autoprefixer@10.6.2
+├── canvas-confetti@1.9.4
+├── dotenv@17.4.2
+├── esbuild@0.25.12
+├── express@4.22.3
+├── lucide-react@0.546.0
+├── motion@12.43.0
+├── prisma@8.0.0-rc.28
+├── react-dom@19.3.1
+├── react@19.3.1
+├── tailwindcss@4.3.3
+├── tsx@4.23.15
+├── typescript@7.0.2
+└── vite@8.3.5
+
+3. npx tsc --noEmit:
+Exit code: 0 (No type errors)
+
+4. npm test:
+Exit code: 0
+TAP version 13
+# Subtest: Detection Engine: Terminology avoids NW Home and suggests Northwind Home
+ok 1 - Detection Engine: Terminology avoids NW Home and suggests Northwind Home
+# Subtest: Detection Engine: Claims identifies expired source for #1 and best-in-class
+ok 2 - Detection Engine: Claims identifies expired source for #1 and best-in-class
+# Subtest: Detection Engine: Confidentiality flags API secret keys and internal banners
+ok 3 - Detection Engine: Confidentiality flags API secret keys and internal banners
+# Subtest: Detection Engine: Accessibility checks heading skips and vague links
+ok 4 - Detection Engine: Accessibility checks heading skips and vague links
+# Subtest: Detection Engine: Tone catches consecutive exclamation marks and banned slang
+ok 5 - Detection Engine: Tone catches consecutive exclamation marks and banned slang
+# Subtest: Detection Engine: applySuggestedFix replaces exact text span cleanly
+ok 6 - Detection Engine: applySuggestedFix replaces exact text span cleanly
+# Subtest: Detection Engine: Orchestrator calculates readiness score and blocker caps
+ok 7 - Detection Engine: Orchestrator calculates readiness score and blocker caps
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 335.453932
+
+5. npm run build:
+Exit code: 0
+vite v8.3.5 building client environment for production...
+✓ 1682 modules transformed.
+dist/index.html                   1.38 kB │ gzip:   0.58 kB
+dist/assets/index-D06VUqlH.css   55.79 kB │ gzip:   9.75 kB
+dist/assets/index-BIgAPXtA.js   650.28 kB │ gzip: 178.98 kB
+✓ built in 746ms
+
+6. npx prisma db push:
+Exit code: 2
+✘ [CLI.UNKNOWN_COMMAND] No command registered for `push`, did you mean `update`?
+→ List every command: prisma --help
+
+7. npm run seed:
+Exit code: 1
+SyntaxError: The requested module '@prisma/client' does not provide an export named 'PrismaClient'
+
+8. npm run dev (startup log only):
+> react-example@0.0.0 dev
+> vite --port=3000 --host=0.0.0.0
+  VITE v8.3.5  ready in 521 ms
+  ➜  Local:   http://localhost:3000/

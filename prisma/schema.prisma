@@ -1,0 +1,176 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Organization {
+  id        String   @id @default(cuid())
+  name      String
+  tagline   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  users     User[]
+  items     ContentItem[]
+  guidelines Guideline[]
+  terms     TerminologyTerm[]
+  sources   ApprovedSource[]
+  assets    ApprovedAsset[]
+  auditLogs AuditLog[]
+}
+
+model User {
+  id             String        @id @default(cuid())
+  organizationId String
+  organization   Organization  @relation(fields: [organizationId], references: [id])
+  name           String
+  email          String        @unique
+  role           String        // CREATOR, REVIEWER, BRAND_ADMIN, VIEWER
+  avatar         String?
+  createdAt      DateTime      @default(now())
+  contentItems   ContentItem[]
+  comments       AnchoredComment[]
+}
+
+model Guideline {
+  id             String       @id
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  category       String
+  ruleCode       String
+  title          String
+  description    String
+  severity       String       // BLOCKER, HIGH, MEDIUM, LOW
+  examplesJson   String
+  createdAt      DateTime     @default(now())
+}
+
+model TerminologyTerm {
+  id             String       @id @default(cuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  term           String
+  preferred      String
+  explanation    String
+  category       String
+}
+
+model ApprovedSource {
+  id                         String       @id
+  organizationId             String
+  organization               Organization @relation(fields: [organizationId], references: [id])
+  title                      String
+  factType                   String
+  owner                      String
+  effectiveFrom              DateTime
+  reviewAfter                DateTime
+  isExpired                  Boolean      @default(false)
+  substantiatedStatementText String
+  allowedSuperlativesJson    String
+  numericMetricsJson         String
+  notes                      String?
+}
+
+model ApprovedAsset {
+  id             String       @id
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  name           String
+  type           String
+  dHash          String?
+  paletteHexJson String?
+  minClearspace  String?
+  description    String
+  previewUrl     String
+}
+
+model ContentItem {
+  id             String        @id @default(cuid())
+  organizationId String
+  organization   Organization  @relation(fields: [organizationId], references: [id])
+  title          String
+  channel        String        // PRESS, BLOG, INTERNAL, LANDING, SOCIAL, EMAIL, SUPPORT
+  format         String        // TEXT, MARKDOWN, DOCX, PDF, IMAGE
+  status         String        // DRAFT, SUBMITTED, IN_REVIEW, CHANGES_REQUESTED, APPROVED, PUBLISHED
+  authorId       String
+  author         User          @relation(fields: [authorId], references: [id])
+  currentVersion Int           @default(1)
+  mediaUrl       String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  versions       ContentVersion[]
+  comments       AnchoredComment[]
+}
+
+model ContentVersion {
+  id                 String       @id @default(cuid())
+  contentItemId      String
+  contentItem        ContentItem  @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+  versionNumber      Int
+  rawContent         String
+  mediaUrl           String?
+  readinessScore     Int
+  blockersCount      Int
+  totalFindingsCount Int
+  changeSummary      String?
+  createdAt          DateTime     @default(now())
+  findings           Finding[]
+}
+
+model Finding {
+  id              String         @id @default(cuid())
+  versionId       String
+  version         ContentVersion @relation(fields: [versionId], references: [id], onDelete: Cascade)
+  category        String
+  severity        String
+  ruleCode        String
+  startPos        Int
+  endPos          Int
+  matchedText     String
+  why             String
+  citationId      String
+  citationJson    String
+  suggestedAction String
+  suggestedText   String
+  guideline_version_hash String?
+  status          String         // OPEN, ACCEPTED, REJECTED, EDITED
+  weight          Float
+  editedFix       String?
+  rejectionReason String?
+  reviewedBy      String?
+  reviewedAt      DateTime?
+}
+
+model AnchoredComment {
+  id            String      @id @default(cuid())
+  contentItemId String
+  contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+  versionNumber Int
+  authorId      String
+  author        User        @relation(fields: [authorId], references: [id])
+  startPos      Int?
+  endPos        Int?
+  matchedText   String?
+  commentText   String
+  resolved      Boolean     @default(false)
+  createdAt     DateTime    @default(now())
+}
+
+model AuditLog {
+  id             String       @id @default(cuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  timestamp      DateTime     @default(now())
+  actorId        String
+  actorName      String
+  actorRole      String
+  action         String
+  targetType     String
+  targetId       String
+  details        String
+  previousHash   String
+  hash           String
+}
